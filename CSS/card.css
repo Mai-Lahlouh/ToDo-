@@ -1,0 +1,115 @@
+.card{
+    width: 550px;   
+    position: relative;
+}
+div.header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.color{
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 4px;  
+    font-weight: 750; 
+}
+.header ion-icon{
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 15px;
+}
+.checkbtn{
+    font-size: 20px;
+    color: #50526d;   
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #25273D;
+    padding-left: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 55px;
+}
+input#todo-input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font: 12px cursive;   
+    padding: 10px; 
+    color: #ffffff;
+}
+#addBtn{
+    color: #f0f8ff;
+    background: none;
+    border: none;
+    padding-right: 15px;
+    font-size: 25px;
+}
+#todo-list{
+    width: inherit;
+    position: absolute;
+    top: 230px;
+    list-style: none;
+    color: #ffffff;
+}
+ul li{
+    height: 55px;
+    background: #25273D;
+    border-bottom: thin solid #393A4B;   
+    display: flex;
+    align-items: center;
+    padding-left: 10px;  
+    position: relative; 
+}
+.task{
+    font: 12px cursive;
+}
+li span{
+    padding-left: 9px;
+}
+.show{
+    margin-top: 10px;
+    height: 55px;
+    background: #25273D;;
+    display: flex;
+    justify-content: space-around;
+}
+.show > *{
+    border: none;
+    background: transparent;
+    font:12px cursive;
+    color: #67687c;
+}
+.show > button:hover{
+    transform: scale(1.3);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.show output{
+    padding-top: 17px;
+    color: #67687c;
+    font-size: 12px;
+}
+ul li.checked{
+    color:#67687c;
+    text-decoration: line-through;
+    font: 12px cursive;
+}
+.show button.clicked{
+    color: #3921c2;
+}
+.delete-icon{
+    display: none;
+    color: red;
+    position: absolute;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+.task:hover .delete-icon{
+    display: block;
+}

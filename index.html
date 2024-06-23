@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo</title>
+        <meta charset="UTF-8">
+        <meta name="List" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/card.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="header">
+                    <div class="color">TODO</div>
+                    <ion-icon name="sunny"></ion-icon>                 
+                </div> 
+                <div class="row">
+                    <ion-icon name="ellipse-outline" class="checkbtn"></ion-icon>
+                    <input type="text" id="todo-input" placeholder="Create a new todo..">
+                    <button id="addBtn" onclick="addTask();">+</button>
+                </div>                               
+                <div class="show">
+                    <output>items left</output>
+                    <button type="button" id="all">All</button>
+                    <button type="button" id="active">Active</button>
+                    <button type="button" id="completed">Completed</button>
+                    <button type="button" id="clear-completed">Clear completed</button>
+                </div> 
+                <ul id="todo-list"></ul>                                                                                                                                                      
+            </div>          
+        </div>
+        <footer>
+            © 2024 Mai Lahlouh | All Rights Reserved
+        </footer> 
+        <script src="main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
